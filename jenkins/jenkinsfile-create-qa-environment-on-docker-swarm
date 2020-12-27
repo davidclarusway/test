@@ -12,7 +12,7 @@ pipeline {
     }
     stages {
         stage('Create QA Environment Infrastructure') {
-            steps {
+            steps{
                 echo 'Creating Infrastructure for QA Environment with Cloudfomation'
                 sh "aws cloudformation create-stack --region ${AWS_REGION} --stack-name ${APP_STACK_NAME} --capabilities CAPABILITY_IAM --template-body file://${CFN_TEMPLATE} --parameters ParameterKey=KeyPairName,ParameterValue=${CFN_KEYPAIR}"
 
