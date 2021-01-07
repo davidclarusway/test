@@ -1,0 +1,1 @@
+helm install rancher rancher-latest/rancher --namespace cattle-system --set hostname=david-rancher.clarusway.us --set tls=external --set replicas=1
