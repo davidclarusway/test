@@ -10,7 +10,7 @@ pipeline {
         RANCHER_URL="https://david-rancher.clarusway.us"
         // Get the project-id from Rancher UI
         RANCHER_CONTEXT="c-p2gq7:p-94xrx"
-        RANCHER_CREDS=credentials('rancher-petclinic-credentials')
+        RANCHER_CREDS=credentials('rancher-petclinic-cred-test')
     }
     stages {
         stage('Package Application') {
